@@ -1,0 +1,50 @@
+name: JNCIA Daily Quiz
+
+on:
+  schedule:
+    # UTC times (Vietnam is UTC+7, so subtract 7 hours)
+    # 9:00 AM ICT  = 02:00 UTC  → send morning batch
+    - cron: '0 2 * * *'
+
+  # Allow manual trigger for testing
+  workflow_dispatch:
+
+jobs:
+  send-questions:
+    runs-on: ubuntu-latest
+    # Give write permission so we can commit updated state.json
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch full history so git push works correctly
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests python-docx
+
+      - name: Send daily questions
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+        working-directory: JNCIA_Only_Dapan
+        run: python send_daily_questions.py
+
+      - name: Commit updated state
+        run: |
+          cd JNCIA_Only_Dapan
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          # Only commit if there are changes
+          git diff --cached --quiet || git commit -m "chore: update quiz state [skip ci]"
+          git push
