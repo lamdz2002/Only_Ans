@@ -126,17 +126,17 @@ def build_answer_message(q, position, total=QUESTIONS_PER_DAY):
     for opt in q["options"]:
         letter = get_option_letter(opt)
         if letter and letter in correct:
-            answer_lines.append(f"<b>• {opt}</b>")
+            answer_lines.append(f"👉 <code>{opt}</code>")
 
     # Fallback: just show letters if options weren't parsed correctly
     if not answer_lines:
-        answer_lines = [f"<b>• {l}</b>" for l in sorted(correct)]
+        answer_lines = [f"👉 <code>{l}</code>" for l in sorted(correct)]
 
     answers_text = "\n".join(answer_lines)
     text = (
-        f"✅ <b>Đáp án — Question {qnum}</b>\n"
+        f"🎯 <b>ĐÁP ÁN CHÍNH XÁC — Q{qnum}</b>\n"
         f"━━━━━━━━━━━━━━━━━━\n"
-        f"{answers_text}"
+        f"<blockquote>{answers_text}</blockquote>"
     )
     return text.strip()
 
