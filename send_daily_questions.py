@@ -14,6 +14,7 @@ import os
 import json
 import math
 import requests
+import html
 from datetime import date
 
 # ── Config ────────────────────────────────────────────────────────────────────
@@ -87,57 +88,46 @@ def get_option_letter(opt_text):
         return opt_text[0].upper()
     return ""
 
-def build_question_message(q, position, total=QUESTIONS_PER_DAY):
-    """Build the text block for one question.
-    Correct options → bold + ✅ prefix.
-    Wrong options   → italic (visually dimmed).
+def build_combined_message(q, position, total=QUESTIONS_PER_DAY):
+    """Build a single, highly prominent message for memorization.
+    - Question body: Bold
+    - Wrong options: Italic (dimmed)
+    - Correct options: Blockquote + Code + Emoji
+    - Escapes HTML to prevent Telegram 400 Bad Request.
     """
     qnum    = q["number"]
-    body    = " ".join(q["body"])
+    body    = html.escape(" ".join(q["body"]))
     correct = get_answer_letters(q)
 
-    option_lines = []
+    wrong_lines = []
+    correct_lines = []
     for opt in q["options"]:
         letter = get_option_letter(opt)
+        opt_esc = html.escape(opt)
         if letter and letter in correct:
-            option_lines.append(f"<b>✅ {opt}</b>")
+            correct_lines.append(f"👉 <code>{opt_esc}</code>")
         else:
-            option_lines.append(f"<i>{opt}</i>")
-    options = "\n".join(option_lines)
+            wrong_lines.append(f"<i>{opt_esc}</i>")
+
+    if not correct_lines:
+        correct_lines = [f"👉 <code>{l}</code>" for l in sorted(correct)]
+
+    wrong_text = "\n".join(wrong_lines)
+    correct_text = "\n".join(correct_lines)
 
     header   = f"📌 <b>Câu {position}/{total} — Question {qnum}</b>"
-    img_note = "  🖼 <i>(kèm hình bên dưới)</i>" if q["images"] else ""
-    text = (
-        f"{header}{img_note}\n"
-        f"━━━━━━━━━━━━━━━━━━\n"
-        f"{body}\n\n"
-        f"{options}\n"
-    )
-    return text.strip()
+    img_note = "  🖼 <i>(xem hình bên trên)</i>" if q["images"] else ""
 
-
-def build_answer_message(q, position, total=QUESTIONS_PER_DAY):
-    """Build the answer reveal block with full option text bolded."""
-    qnum    = q["number"]
-    correct = get_answer_letters(q)
-
-    # Collect the full text of correct options
-    answer_lines = []
-    for opt in q["options"]:
-        letter = get_option_letter(opt)
-        if letter and letter in correct:
-            answer_lines.append(f"👉 <code>{opt}</code>")
-
-    # Fallback: just show letters if options weren't parsed correctly
-    if not answer_lines:
-        answer_lines = [f"👉 <code>{l}</code>" for l in sorted(correct)]
-
-    answers_text = "\n".join(answer_lines)
-    text = (
-        f"🎯 <b>ĐÁP ÁN CHÍNH XÁC — Q{qnum}</b>\n"
-        f"━━━━━━━━━━━━━━━━━━\n"
-        f"<blockquote>{answers_text}</blockquote>"
-    )
+    text = f"{header}{img_note}\n"
+    text += f"━━━━━━━━━━━━━━━━━━\n"
+    text += f"<b>{body}</b>\n\n"
+    
+    if wrong_text:
+        text += f"{wrong_text}\n\n"
+        
+    text += f"🎯 <b>ĐÁP ÁN CHÍNH XÁC:</b>\n"
+    text += f"<blockquote>{correct_text}</blockquote>"
+    
     return text.strip()
 
 
@@ -178,25 +168,17 @@ def main():
     # Send header (high → low)
     send_text(build_batch_header(high_qnum, low_qnum, today_str))
 
-    # Send each question + answer
+    # Send each question
     for pos, q in enumerate(batch, start=1):
-        q_text = build_question_message(q, pos)
-        a_text = build_answer_message(q, pos)
+        msg_text = build_combined_message(q, pos)
 
-        # If question has an image, send photo + question as caption
+        # If question has an image, send photo first, then text message
         if q["images"]:
             img_path = os.path.join(BASE_DIR, q["images"][0])
             if os.path.exists(img_path):
-                # Send image with question as caption (caption limit 1024 chars)
-                caption = q_text[:1020] if len(q_text) > 1020 else q_text
-                send_photo(img_path, caption=caption)
-            else:
-                send_text(q_text)
-        else:
-            send_text(q_text)
-
-        # Send answer
-        send_text(a_text)
+                send_photo(img_path)
+                
+        send_text(msg_text)
 
     # Next batch starts QUESTIONS_PER_DAY below current idx
     next_idx = (idx - QUESTIONS_PER_DAY) % total_q
