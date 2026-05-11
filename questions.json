@@ -1,0 +1,1555 @@
+[
+  {
+    "number": 1,
+    "body": [
+      "Referring to the exhibit, which route(s) will be selected by Junos for packet forwarding?"
+    ],
+    "options": [
+      "A. The OSPF route will be selected.",
+      "B. The static route will be selected.",
+      "C. The Junos OS randomly selects one route.",
+      "D. The Junos OS selects both routes."
+    ],
+    "answer": "B",
+    "images": [
+      "images/q1_0.png"
+    ]
+  },
+  {
+    "number": 2,
+    "body": [
+      "You want to find out the chassis serial number of a Junos device.",
+      "Which command would display this information?"
+    ],
+    "options": [
+      "A. show chassis environment",
+      "B. show chassis hardware",
+      "C. show chassis routing-engine",
+      "D. show chassis location"
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 3,
+    "body": [
+      "Which two components are included in a transport header? (Choose two.)"
+    ],
+    "options": [
+      "A. destination MAC address",
+      "B. destination port number",
+      "C. source MAC address",
+      "D. source port number"
+    ],
+    "answer": "BD",
+    "images": []
+  },
+  {
+    "number": 4,
+    "body": [
+      "What is a benefit of using J-Web?"
+    ],
+    "options": [
+      "A. It simultaneously manages multiple devices.",
+      "B. It provides a customizable dashboard.",
+      "C. It provides more advanced features than the CLI.",
+      "D. It provides console-based management."
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 5,
+    "body": [
+      "Which Junos OS component is responsible for maintaining the forwarding table?"
+    ],
+    "options": [
+      "A. Packet Forwarding Engine",
+      "B. chassis control daemon",
+      "C. Routing Engine",
+      "D. management daemon"
+    ],
+    "answer": "A",
+    "images": []
+  },
+  {
+    "number": 6,
+    "body": [
+      "What are two examples of exception traffic? (Choose two.)"
+    ],
+    "options": [
+      "A. transit packets",
+      "B. routing updates",
+      "C. log messages",
+      "D. ping to the local device"
+    ],
+    "answer": "BD",
+    "images": []
+  },
+  {
+    "number": 7,
+    "body": [
+      "You are trying to diagnose packet loss at interface ge-0/0/3.",
+      "In this scenario, which command would help you view error statistics in real",
+      "time?"
+    ],
+    "options": [
+      "A. monitor interface ge-0/0/3",
+      "B. show interface ge-0/0/3",
+      "C. show interface terse",
+      "D. monitor interface traffic"
+    ],
+    "answer": "A",
+    "images": []
+  },
+  {
+    "number": 8,
+    "body": [
+      "What are two methods for navigating to configuration mode from an operational mode prompt? (Choose two.)"
+    ],
+    "options": [
+      "A. Use the quit command.",
+      "B. Use the configure command.",
+      "C. Use the exit command.",
+      "D. Use the edit command."
+    ],
+    "answer": "BD",
+    "images": []
+  },
+  {
+    "number": 9,
+    "body": [
+      "Referring to the exhibit, where are the configuration backup files stored?"
+    ],
+    "options": [
+      "A. Files are stored to any site as selected by Junos internally.",
+      "B. Files are stored to the SCP site but if the transfer fails, then to the FTP site.",
+      "C. Files are stored to the SCP site and the FTP site in a round-robin manner.",
+      "D. Files are stored to the SCP site and the FTP site simultaneously. Cùng 1 lúc"
+    ],
+    "answer": "D",
+    "images": [
+      "images/q9_1.png"
+    ]
+  },
+  {
+    "number": 10,
+    "body": [
+      "You issue the telnet 10.10.10.1 source 192.168.100.1 command.",
+      "Which two statements are correct in this scenario? (Choose two.)"
+    ],
+    "options": [
+      "A. The telnet session will have a source address of 192.168.100.1.",
+      "B. The telnet session will have a destination address of 192.168.100.1.",
+      "C. The telnet session will have a source address of 10.10.10.1.",
+      "D. The telnet session will have a destination address of 10.10.10.1"
+    ],
+    "answer": "AD",
+    "images": []
+  },
+  {
+    "number": 11,
+    "body": [
+      "You are logged in to a Junos OS device with SSH and issued the show protocols    I    compare command in the configuration, but no output is shown.",
+      "Which statement is correct in this scenario?"
+    ],
+    "options": [
+      "A. The command only works for interface configuration differences.",
+      "B. There are no changes to the candidate configuration.",
+      "C. Someone accidentally deleted the active configuration.",
+      "D. You must commit the configuration before any output will be shown."
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 12,
+    "body": [
+      "What are two physical interface properties? (Choose two.) giao diện vật lý"
+    ],
+    "options": [
+      "A. MTU",
+      "B. routing protocols",
+      "C. IP address",
+      "D. MAC address"
+    ],
+    "answer": "AD",
+    "images": []
+  },
+  {
+    "number": 13,
+    "body": [
+      "Which prompt indicates that you are using configuration mode?"
+    ],
+    "options": [
+      "A. >",
+      "B. $",
+      "C. #",
+      "D. %"
+    ],
+    "answer": "C",
+    "images": []
+  },
+  {
+    "number": 14,
+    "body": [
+      "Which process in the Junos OS is responsible for maintaining routing protocols and tables?"
+    ],
+    "options": [
+      "A. rpd",
+      "B. mgd",
+      "C. chassisd",
+      "D. dcd"
+    ],
+    "answer": "A",
+    "images": []
+  },
+  {
+    "number": 15,
+    "body": [
+      "How many rescue configuration files are supported on a Junos device?"
+    ],
+    "options": [
+      "A. 49",
+      "B. 3",
+      "C. 50",
+      "D. 1"
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 16,
+    "body": [
+      "What are two functions of the Routing Engine? (Choose two.)"
+    ],
+    "options": [
+      "A. It runs the Junos operating system.",
+      "B. It processes all management traffic.",
+      "C. It processes transit traffic.",
+      "D. It evaluates firewall filters for transit traffic."
+    ],
+    "answer": "AB",
+    "images": []
+  },
+  {
+    "number": 17,
+    "body": [
+      "You need to recover the root password on a Junos router without losing the current configuration settings.",
+      "Which three statements describe what you should perform in this scenario? (Choose three.)"
+    ],
+    "options": [
+      "A. Enter and commit the new root password.",
+      "B. Load the factory-default configuration.",
+      "C. Upgrade the Junos OS to the latest version.",
+      "D. Hit the space bar and enter recovery when prompted.",
+      "E. Use a console connection to reboot the device."
+    ],
+    "answer": "ADE",
+    "images": []
+  },
+  {
+    "number": 18,
+    "body": [
+      "You are configuring a firewall filter on a Juniper device.",
+      "In this scenario, what are two valid terminating actions? (Choose two.)"
+    ],
+    "options": [
+      "A. count",
+      "B. discard",
+      "C. next term",
+      "D. accept"
+    ],
+    "answer": "BD",
+    "images": []
+  },
+  {
+    "number": 19,
+    "body": [
+      "Which two statements are true about the Junos OS? (Choose two.)"
+    ],
+    "options": [
+      "A. Routing tables are stored in the control plane.",
+      "B. Exception traffic is never sent to the control plane.",
+      "C. Exception traffic is sent to the control plane.",
+      "D. Routing tables are stored in the forwarding plane."
+    ],
+    "answer": "AC",
+    "images": []
+  },
+  {
+    "number": 20,
+    "body": [
+      "You are asked to view the real-time usage statistics for the busiest interfaces on a device running Junos OS.",
+      "Which command will achieve this task?"
+    ],
+    "options": [
+      "A. monitor traffic absolute-sequence",
+      "B. monitor interface traffic",
+      "C. monitor traffic",
+      "D. show interfaces extensive"
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 21,
+    "body": [
+      "When considering routing policies, which two statements are correct? (Choose two.)"
+    ],
+    "options": [
+      "A. Routing policies are applied to interfaces as input or export filters.",
+      "B. An import routing policy for BGP determines which received prefix advertisements are placed in the routing information base.",
+      "C. Policy terms are evaluated from top to bottom with action taken on the first match found.",
+      "D. Policy terms are evaluated from top to bottom with the most restrictive action taken of all the matching terms."
+    ],
+    "answer": "BC",
+    "images": []
+  },
+  {
+    "number": 22,
+    "body": [
+      "Which service does RADIUS provide?"
+    ],
+    "options": [
+      "A. routing",
+      "B. authentication",
+      "C. DNS resolution",
+      "D. time synchronization"
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 23,
+    "body": [
+      "Which two common routing policy actions affect the flow of policy evaluation? (Choose two.)"
+    ],
+    "options": [
+      "A. next policy",
+      "B. community",
+      "C. next term",
+      "D. next hop"
+    ],
+    "answer": "AC",
+    "images": []
+  },
+  {
+    "number": 24,
+    "body": [
+      "Referring to the exhibit, which two statements are correct? (Choose two.)"
+    ],
+    "options": [
+      "A. The policy enables equal cost load balancing in the forwarding table.",
+      "B. The policy must be applied under the protocols hierarchy.",
+      "C. The policy enables per-packet load balancing.",
+      "D. The policy enables flow-based load balancing."
+    ],
+    "answer": "AD",
+    "images": [
+      "images/q24_2.png"
+    ]
+  },
+  {
+    "number": 25,
+    "body": [
+      "What are two attributes of the UDP protocol? (Choose two.)"
+    ],
+    "options": [
+      "A. UDP is best effort.",
+      "B. UDP is always slower than TCP.",
+      "C. UDP is connectionless.",
+      "D. UDP is more reliable than TCP."
+    ],
+    "answer": "AC",
+    "images": []
+  },
+  {
+    "number": 26,
+    "body": [
+      "What will the request system configuration rescue save command do?"
+    ],
+    "options": [
+      "A. It saves the most recently committed configuration as the rescue configuration.",
+      "B. It saves the candidate configuration as the rescue configuration.",
+      "C. It saves a configuration version prior to the configuration most recently committed as the rescue configuration.",
+      "D. It activates the rescue configuration."
+    ],
+    "answer": "A",
+    "images": []
+  },
+  {
+    "number": 27,
+    "body": [
+      "What are two advantages of using the Junos OS? (Choose two.)"
+    ],
+    "options": [
+      "A. It supports up to a maximum of two previous configurations.",
+      "B. It enables you to roll back to a previous configuration.",
+      "C. It pushes your configuration changes \"live\" immediately.",
+      "D. It is modular."
+    ],
+    "answer": "BD",
+    "images": []
+  },
+  {
+    "number": 28,
+    "body": [
+      "What are two types of transit traffic that traverse the forwarding plane of a Layer 3 router? (Choose two.)"
+    ],
+    "options": [
+      "A. unicast traffic",
+      "B. multicast traffic",
+      "C. exception traffic",
+      "D. broadcast traffic"
+    ],
+    "answer": "AB",
+    "images": []
+  },
+  {
+    "number": 29,
+    "body": [
+      "What are two benefits when implementing class of service? (Choose two.)"
+    ],
+    "options": [
+      "A. The network will be faster.",
+      "B. Traffic congestion can be managed.",
+      "C. Traffic congestion will be eliminated.",
+      "D. Latency-sensitive traffic can be prioritized"
+    ],
+    "answer": "BD",
+    "images": []
+  },
+  {
+    "number": 30,
+    "body": [
+      "Which command displays all IPv6 routes in the default routing instance?"
+    ],
+    "options": [
+      "A. show route table inet.0",
+      "B. show route table inet6.1",
+      "C. show route table inet.l",
+      "D. show route table inet6.0"
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 31,
+    "body": [
+      "You have just increased the MTU size of interface ge-0/0/0 and committed the configuration.",
+      "Which command would help you identify the applied MTU change?"
+    ],
+    "options": [
+      "A. monitor interface ge-0/0/0",
+      "B. monitor traffic interface ge-0/0/0",
+      "C. show interfaces ge-0/0/0 terse",
+      "D. show interfaces ge-0/0/0"
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 32,
+    "body": [
+      "Which two external authentication methods does Junos support for administrative access? (Choose two.)"
+    ],
+    "options": [
+      "A. ACE",
+      "B. ONIS",
+      "C. RADIUS",
+      "D. TACACS+"
+    ],
+    "answer": "CD",
+    "images": []
+  },
+  {
+    "number": 33,
+    "body": [
+      "What information does the forwarding table require so that the device forwards traffic? (Choose three.)"
+    ],
+    "options": [
+      "A. next hop MAC address",
+      "B. OSPF metric value",
+      "C. next hop IP address",
+      "D. BGP local preference value",
+      "E. outgoing interface name"
+    ],
+    "answer": "ACE",
+    "images": []
+  },
+  {
+    "number": 34,
+    "body": [
+      "Which Junos feature limits the amount of exception traffic that is sent from the PFE to the RE?"
+    ],
+    "options": [
+      "A. scheduler",
+      "B. policer",
+      "C. CoS markings",
+      "D. routing policy"
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 35,
+    "body": [
+      "Referring to the exhibit, which routing configuration is required for these two users to access the remote server?"
+    ],
+    "options": [
+      "A. Users must connect directly to the router.",
+      "B. Users and the server require a default gateway.",
+      "C. Trunk ports must be enabled on the switch.",
+      "D. A routing protocol must be enabled on the router."
+    ],
+    "answer": "B",
+    "images": [
+      "images/q35_3.png"
+    ]
+  },
+  {
+    "number": 36,
+    "body": [
+      "Which criteria does the Junos OS use to select an active route when two entries exist in the routing table?"
+    ],
+    "options": [
+      "A. the route with the lowest preference number",
+      "B. the route with the highest preference number",
+      "C. the most recently learned dynamic route",
+      "D. the route with the highest metric"
+    ],
+    "answer": "A",
+    "images": []
+  },
+  {
+    "number": 37,
+    "body": [
+      "You have configured some interfaces on a Junos device; however, you have not",
+      "yet committed the configuration.",
+      "What happens if you issue the rollback 0 command in this scenario?"
+    ],
+    "options": [
+      "A. The factory default configuration is loaded.",
+      "B. The Junos device is rebooted.",
+      "C. The interface changes you made are discarded.",
+      "D. The messages.log file is deleted."
+    ],
+    "answer": "C",
+    "images": []
+  },
+  {
+    "number": 38,
+    "body": [
+      "When considering routing tables and forwarding tables, which two statements are correct? (Choose two.)"
+    ],
+    "options": [
+      "A. The forwarding table stores all routes and prefixes from all protocols.",
+      "B. The forwarding table is used by the RE to select the best route.",
+      "C. The routing table is used by the RE to select the best route.",
+      "D. The routing table stores all routes and prefixes from all protocols."
+    ],
+    "answer": "CD",
+    "images": []
+  },
+  {
+    "number": 39,
+    "body": [
+      "Which type of device uses the destination IP address to forward packets?"
+    ],
+    "options": [
+      "A. Layer 2 switch",
+      "B. repeater",
+      "C. hub",
+      "D. Layer 3 router"
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 40,
+    "body": [
+      "What are two ways that the carrier-sense multiple access with collision detection (CSMA/CD) MAC protocol help devices \"talk\" with each other in an Ethernet network? (Choose two.)"
+    ],
+    "options": [
+      "A. It allows an Ethernet device to check to see if anything else is transmitting before trying to send.",
+      "B. It allows a network device to either transmit data or receive data.",
+      "C. It operates in half-duplex or full-duplex mode.",
+      "D. It allows a network device to transmit and receive data simultaneously."
+    ],
+    "answer": "AB",
+    "images": []
+  },
+  {
+    "number": 41,
+    "body": [
+      "An administrator configures a router's interface with an IPv4 address and subnet mask. The administrator also confirms that this interface is in an up state.",
+      "In this scenario, which two route types are created on the local router? (Choose two.)"
+    ],
+    "options": [
+      "A. a local route",
+      "B. a dynamic route",
+      "C. a static route",
+      "D. a direct route"
+    ],
+    "answer": "AD",
+    "images": []
+  },
+  {
+    "number": 42,
+    "body": [
+      "What information would you find using the CLI help command?"
+    ],
+    "options": [
+      "A. message of the day",
+      "B. a URL for accessing the technical documentation",
+      "C. an explanation for specific system log error messages",
+      "D. hyperlinks for remediation actions"
+    ],
+    "answer": "C",
+    "images": []
+  },
+  {
+    "number": 43,
+    "body": [
+      "Which protocol is responsible for learning an IPv4 neighbor's MAC address?"
+    ],
+    "options": [
+      "A. Neighbor Discovery Protocol (NDP)",
+      "B. Address Resolution Protocol (ARP)",
+      "C. Media Access Control Security (MACsec)",
+      "D. Network Address Translation (NAT)"
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 44,
+    "body": [
+      "What is the primary system log file that is present in the default configuration of a Junos device?"
+    ],
+    "options": [
+      "A. vrrp",
+      "B. kmd",
+      "C. messages",
+      "D. jsrpd"
+    ],
+    "answer": "C",
+    "images": []
+  },
+  {
+    "number": 45,
+    "body": [
+      "Which two statements about firewall filters are correct? (Choose two.)"
+    ],
+    "options": [
+      "A. Firewall filters are stateless.",
+      "B. Firewall filters can match Layer 7 parameters.",
+      "C. Firewall filters are stateful.",
+      "D. Firewall filters can match parameters."
+    ],
+    "answer": "AD",
+    "images": []
+  },
+  {
+    "number": 46,
+    "body": [
+      "Which two fields are you required to enter when you create a new user account? (Choose two.)"
+    ],
+    "options": [
+      "A. username",
+      "B. full name",
+      "C. user ID",
+      "D. login class"
+    ],
+    "answer": "AD",
+    "images": []
+  },
+  {
+    "number": 47,
+    "body": [
+      "You need to configure interface ge-0/1/2 with an IP address of 172.16.100.1/24.",
+      "You have accidentally entered 172.16.101.1/24 as shown in the exhibit.",
+      "Which command should you issue to solve the problem?"
+    ],
+    "options": [
+      "A. [edit] user@route# rollback rescue",
+      "B. [edit] user@route# rollback 2",
+      "C. [edit] user@route# rollback 0",
+      "D. [edit] user@route# rollback 1"
+    ],
+    "answer": "AD",
+    "images": [
+      "images/q47_4.png"
+    ]
+  },
+  {
+    "number": 48,
+    "body": [
+      "You configured your system authentication order using the set authentication-order tacplus radius password command.",
+      "Which statement is correct in this scenario?",
+      "The password authentication will only be used if the TACACS+ and RADIUS servers fail to respond.",
+      "All authentication methods are used with the most restrictive permission set used.",
+      "The password authentication method is evaluated if the TACACS+ and RADIUS servers respond with a reject message."
+    ],
+    "options": [
+      "A rejection by TACACS+ will prevent a login and bypass the other two authentication methods."
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 49,
+    "body": [
+      "You are asked to convert the number 7 from decimal to binary.",
+      "Which number is correct in this scenario?"
+    ],
+    "options": [
+      "A. 00001000",
+      "B. 00010000",
+      "C. 00000111",
+      "D. 11100000"
+    ],
+    "answer": "C",
+    "images": []
+  },
+  {
+    "number": 50,
+    "body": [
+      "How many login classes are assignable to a user account?"
+    ],
+    "options": [
+      "A. 3",
+      "B. 2",
+      "C. 4",
+      "D. 1"
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 51,
+    "body": [
+      "Which two functions are performed by the PFE? (Choose two.)"
+    ],
+    "options": [
+      "A. It implements firewall filters.",
+      "B. It selects active routes.",
+      "C. It forwards transit traffic.",
+      "D. It maintains the routing table."
+    ],
+    "answer": "AC",
+    "images": []
+  },
+  {
+    "number": 52,
+    "body": [
+      "You are unable to remotely access your Juniper device using the CLI.",
+      "Referring to the exhibit, which command would you add to the existing configuration to enable remote CLI access?"
+    ],
+    "options": [
+      "A. set system login idle-timeout 20",
+      "B. load factory-default",
+      "C. set system services ssh",
+      "D. set system root-authentication plain-text-password"
+    ],
+    "answer": "C",
+    "images": [
+      "images/q52_5.png"
+    ]
+  },
+  {
+    "number": 53,
+    "body": [
+      "What is the maximum number of rollback configuration files that the Junos OS",
+      "will store?"
+    ],
+    "options": [
+      "A. 65",
+      "B. 50",
+      "C. 25",
+      "D. 19"
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 54,
+    "body": [
+      "You are creating a new policy to accept and redistribute routes into your IGP.",
+      "In this scenario, which match criteria would you use to identify the route prefixes to select?"
+    ],
+    "options": [
+      "A. instance",
+      "B. route-type",
+      "C. neighbor",
+      "D. route-filter"
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 55,
+    "body": [
+      "Which three benefits occur when operating an interior gateway protocol (IGP) in an autonomous system (AS)? (Choose three.)"
+    ],
+    "options": [
+      "A. IGPs automatically distribute static routing information.",
+      "B. IGPs determine the optimal paths for data transmission.",
+      "C. IGPs learn prefixes in the global Internet's routing table.",
+      "D. IGPs react very fast to network change.",
+      "E. IGPs learn everything about the subnets and best paths within your network."
+    ],
+    "answer": "BDE",
+    "images": []
+  },
+  {
+    "number": 56,
+    "body": [
+      "By default, how does the PFE manage unicast traffic destined for an existing forwarding table entry?"
+    ],
+    "options": [
+      "A. It sends the traffic through multiple ports toward its destination.",
+      "B. It sends the traffic through one port toward its destination.",
+      "C. It sends the traffic through the f xpl interface to the RE.",
+      "D. It sends all traffic to the control plane for further processing."
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 57,
+    "body": [
+      "Which two actions happen when multiple users issue the configure exclusive command to enter configuration mode on a Junos device? (Choose two.)"
+    ],
+    "options": [
+      "A. The candidate configuration is locked.",
+      "B. Other users can enter configuration mode.",
+      "C. The candidate configuration is unlocked.",
+      "D. Other users cannot enter configuration mode."
+    ],
+    "answer": "AD",
+    "images": []
+  },
+  {
+    "number": 58,
+    "body": [
+      "Which statement is correct when multiple users are configuring a Junos device using the configure private command?"
+    ],
+    "options": [
+      "A. A commit by any user will commit changes made by all active users.",
+      "B. A commit will not succeed until there is only a single user in configuration mode.",
+      "C. Each user gets their own candidate configuration.",
+      "D. Each user shares the same candidate configuration."
+    ],
+    "answer": "C",
+    "images": []
+  },
+  {
+    "number": 59,
+    "body": [
+      "Which two statements about route preference in Junos are correct? (Choose two.)"
+    ],
+    "options": [
+      "A. Both direct and static routes have the same preference.",
+      "B. Both direct and local routes have the same preference.",
+      "C. Both OSPF internal and OSPF AS external routes have the same preference.",
+      "D. Both EBGP and IBGP routes have the same preference."
+    ],
+    "answer": "BD",
+    "images": []
+  },
+  {
+    "number": 60,
+    "body": [
+      "Which two addresses are included in an Ethernet frame header? (Choose two.)"
+    ],
+    "options": [
+      "A. destination MAC address",
+      "B. destination IP address",
+      "C. source MAC address",
+      "D. source IP address"
+    ],
+    "answer": "AC",
+    "images": []
+  },
+  {
+    "number": 61,
+    "body": [
+      "Referring to the exhibit, which statement is correct?"
+    ],
+    "options": [
+      "A. The OSPF path is the only active route.",
+      "B. The BGP route is preferred over the OSPF route.",
+      "C. The BGP path is the only active route.",
+      "D. Traffic is load-balanced across two routes."
+    ],
+    "answer": "A",
+    "images": [
+      "images/q61_6.png"
+    ]
+  },
+  {
+    "number": 62,
+    "body": [
+      "What is the protocol data unit (PDU) of the Data Link Layer?"
+    ],
+    "options": [
+      "A. byte",
+      "B. bit",
+      "C. segment",
+      "D. frame"
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 63,
+    "body": [
+      "Which process in the Junos OS is responsible for device management tasks including the CLI and commit operations?"
+    ],
+    "options": [
+      "A. chassisd",
+      "B. mgd",
+      "C. rpd",
+      "D. dcd"
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 64,
+    "body": [
+      "Which advantage is provided by multiple software processes running in the Junos OS?"
+    ],
+    "options": [
+      "A. Each process allocates a fixed amount of CPU resources.",
+      "B. Each process dependency can be mapped independently.",
+      "C. Each process is started manually to ensure system stability.",
+      "D. Each process runs in a protected memory space."
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 65,
+    "body": [
+      "You issue the monitor traffic interface ge-0/0/0 command.",
+      "What will this command accomplish?"
+    ],
+    "options": [
+      "A. It displays real-time statistics for interface ge-0/0/0.",
+      "B. It displays an operational summary of ge-0/0/0.",
+      "C. It displays the MTU and MAC address for ge-0/0/0.",
+      "D. It displays a packet capture on interface ge-0/0/0."
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 66,
+    "body": [
+      "Which statement is correct concerning exception traffic processing?"
+    ],
+    "options": [
+      "A. Exception traffic is discarded by the PFE.",
+      "B. Exception traffic is rate-limited to protect the RE.",
+      "C. Exception traffic is always dropped during congestion.",
+      "D. Exception traffic is never forwarded."
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 67,
+    "body": [
+      "Referring the exhibit, what does the highlighted number indicate?"
+    ],
+    "options": [
+      "A. route preference is 5",
+      "B. hop count is 5",
+      "C. cost is 5",
+      "D. metric is 5"
+    ],
+    "answer": "A",
+    "images": [
+      "images/q67_7.png"
+    ]
+  },
+  {
+    "number": 68,
+    "body": [
+      "Which component is considered part of the data plane?"
+    ],
+    "options": [
+      "A. the power supply",
+      "B. the Packet Forwarding Engine",
+      "C. the fan tray",
+      "D. the Routing Engine"
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 69,
+    "body": [
+      "Which two statements apply to the Routing Engine functions? (Choose two.)"
+    ],
+    "options": [
+      "A. It processes the transit traffic.",
+      "B. It does not process routing updates.",
+      "C. It responds to ping and traceroute commands.",
+      "D. It maintains the routing tables."
+    ],
+    "answer": "CD",
+    "images": []
+  },
+  {
+    "number": 70,
+    "body": [
+      "Which two statements are correct about a Routing Engine? (Choose two.)"
+    ],
+    "options": [
+      "A. It processes CoS marked traffic.",
+      "B. It processes management traffic.",
+      "C. It maintains routing tables.",
+      "D. It forwards transit traffic."
+    ],
+    "answer": "BC",
+    "images": []
+  },
+  {
+    "number": 71,
+    "body": [
+      "When considering routing tables and forwarding tables, which two statements are correct? (Choose two.)"
+    ],
+    "options": [
+      "A. The routing table is used by the RE to select the best route.",
+      "B. The forwarding table is used by the RE to select the best route.",
+      "C. The routing table stores all routes and prefixes from all protocols.",
+      "D.The forwarding table stores all routes and prefixes from all protocols."
+    ],
+    "answer": "AC",
+    "images": []
+  },
+  {
+    "number": 72,
+    "body": [
+      "You have completed the initial configuration of your new Junos device. You want to be able to load this configuration at a later time.",
+      "Which action enables you to perform this task?"
+    ],
+    "options": [
+      "A. Enter the load factory-default command.",
+      "B. Enter the request system reboot command.",
+      "C. Enter the request system zeroize command.",
+      "D. Enter the request system configuration rescue save command."
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 73,
+    "body": [
+      "Which two statements are correct about the employee@Ri> prompt? (Choose two.)"
+    ],
+    "options": [
+      "A. R1 is the hostname of your device.",
+      "B. You are in operational mode.",
+      "C. You are in configuration mode.",
+      "D. You are at a shell prompt."
+    ],
+    "answer": "AB",
+    "images": []
+  },
+  {
+    "number": 74,
+    "body": [
+      "You have logged on to a Junos device and are at the operational mode prompt.",
+      "Which two commands are used at this prompt? (Choose two.)"
+    ],
+    "options": [
+      "A. show interface ge-0/0/0",
+      "B. request system shutdown",
+      "C. set interface ge-0/0/0 unit 0 family inet",
+      "D. run show interface terse"
+    ],
+    "answer": "AB",
+    "images": []
+  },
+  {
+    "number": 75,
+    "body": [
+      "Which two statements describe the result when you enter ? at the command- line prompt? (Choose two.)"
+    ],
+    "options": [
+      "A. It displays help about a text string contained in a statement.",
+      "B. It lists the available commands and options.",
+      "C. It displays summary information about the commands and options.",
+      "D. It lists tips for the help menu."
+    ],
+    "answer": "BC",
+    "images": []
+  },
+  {
+    "number": 76,
+    "body": [
+      "Which two protocols use UDP at the transport layer? (Choose two.)"
+    ],
+    "options": [
+      "A. NTP",
+      "B. FTP",
+      "C. SNMP",
+      "D. HTTP"
+    ],
+    "answer": "AC",
+    "images": []
+  },
+  {
+    "number": 77,
+    "body": [
+      "You received a new Junos device and are configuring the system-related settings. You must configure this device for the current date and time on the US West coast. You have set the time zone to America/Los_Angeles, however the time and date did not change.",
+      "In this scenario, which two additional actions would satisfy this requirement? (Choose two.)"
+    ],
+    "options": [
+      "A. Configure a DNS server.",
+      "B. Reboot the device.",
+      "C. Set the date and time setting manually.",
+      "D. Configure an NTP server."
+    ],
+    "answer": "CD",
+    "images": []
+  },
+  {
+    "number": 78,
+    "body": [
+      "After the factory default configuration is loaded, which configuration object must be created prior to the first commit?"
+    ],
+    "options": [
+      "A. out-of-band connectivity",
+      "B. loopback IP address",
+      "C. root authentication",
+      "D. host name"
+    ],
+    "answer": "C",
+    "images": []
+  },
+  {
+    "number": 79,
+    "body": [
+      "In the Junos OS, which keyboard shortcut allows you to move to the start of the line?"
+    ],
+    "options": [
+      "A. Ctrl+e",
+      "B. Ctrl+a",
+      "C. Ctrl+k",
+      "D. Ctrl+w"
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 80,
+    "body": [
+      "Your router has a route to the 10.1.1.0/24 network with a next hop of rict.",
+      "In this scenario, which action will your router perform when traffic destined to the 10.1.1.0/24 network is received?"
+    ],
+    "options": [
+      "A. The traffic will be discarded and an ICMP unreachable message will be sent to the destination of the traffic.",
+      "B. The traffic will be discarded and an ICMP unreachable message will be sent to the source of the traffic.",
+      "C. The traffic will be redirected using a default route.",
+      "D. The traffic will be silently discarded."
+    ],
+    "answer": "B",
+    "images": []
+  },
+  {
+    "number": 81,
+    "body": [
+      "Which two statements are correct about Junos traceoptions? (Choose two.)"
+    ],
+    "options": [
+      "A. Traceoptions cannot be enabled in a production environment.",
+      "B. Traceoptions are enabled through configuration.",
+      "C. Traceoptions are enabled by default.",
+      "D. Traceoption output, by default, is stored in /var/log/<file-name>"
+    ],
+    "answer": "BD",
+    "images": []
+  },
+  {
+    "number": 82,
+    "body": [
+      "Referring to the exhibit, OSPF has three export policies that match different static route prefixes. The 10.10.10.0/24 static route does not match any terms in the policyl routing policy.",
+      "What happens next in this scenario?"
+    ],
+    "options": [
+      "A. The static route is evaluated evaluated by the policy3 routing policy.",
+      "B. The static route is evaluated by the policy2 routing policy.",
+      "C. The static route is rejected by the default routing policy.",
+      "D. The static route is rejected by the policyl routing policy."
+    ],
+    "answer": "B",
+    "images": [
+      "images/q82_8.png"
+    ]
+  },
+  {
+    "number": 83,
+    "body": [
+      "Which two statements are correct about MAC addresses? (Choose two.)"
+    ],
+    "options": [
+      "A. Switches use the Address Resolution Protocol table to assign MAC addresses to network interface cards in the forwarding frame.",
+      "B. The source and destination MAC addresses always remains static to the final destination.",
+      "C. The MAC address identifies the physical hardware.",
+      "D. Switches use the destination MAC address to identify the next-hop destination and to change the destination MAC address in the frame."
+    ],
+    "answer": "CD",
+    "images": []
+  },
+  {
+    "number": 84,
+    "body": [
+      "Your network infrastructure transports data, voice, and video traffic. Users are complaining that voice and video calls are not performing to their expectations.",
+      "In this scenario, which technology would you implement to improve voice and video performance on your network?"
+    ],
+    "options": [
+      "A. NAT",
+      "B. IPv6",
+      "C. STP",
+      "D. COS"
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 85,
+    "body": [
+      "Which two statements are correct regarding Layer 2 network switches? (Choose two.)"
+    ],
+    "options": [
+      "A. Switches create a single collision domain.",
+      "B. Switches do not learn MAC addresses.",
+      "C. Switches flood broadcast traffic.",
+      "D. Switches are susceptible to traffic loops."
+    ],
+    "answer": "CD",
+    "images": []
+  },
+  {
+    "number": 86,
+    "body": [
+      "Which two statements are correct about firewall filters? (Choose two.)"
+    ],
+    "options": [
+      "A. \"Discard\" is the default action of packets that are not explicitly allowed.",
+      "B. There can be only one firewall filter.",
+      "C. There can be multiple firewall filters.",
+      "D. \"Accept\" is the default action of packets that are not explicitly allowed."
+    ],
+    "answer": "AC",
+    "images": []
+  },
+  {
+    "number": 87,
+    "body": [
+      "Which two statements are true about the candidate configuration? (Choose two.)"
+    ],
+    "options": [
+      "A. Candidate configuration changes are automatically applied.",
+      "B. You can deploy multiple changes at the same time.",
+      "C. Multiple users cannot modify the same candidate configuration.",
+      "D. You can discard changes before committing them."
+    ],
+    "answer": "BD",
+    "images": []
+  },
+  {
+    "number": 88,
+    "body": [
+      "Which two statements are true about the PFE? (Choose two.)"
+    ],
+    "options": [
+      "A. The PFE implements various services such as policing, stateless firewall filtering, and class of service.",
+      "B. The PFE uses Layer 2 and Layer 3 forwarding tables to forward traffic toward its destination.",
+      "C. The PFE handles all processes that control the chassis components.",
+      "D. The PFE is responsible for performing protocol updates and system management."
+    ],
+    "answer": "AB",
+    "images": []
+  },
+  {
+    "number": 89,
+    "body": [
+      "What are two link-state routing protocols? (Choose two.)"
+    ],
+    "options": [
+      "A. RIP",
+      "B. BGP",
+      "C. OSPF",
+      "D. IS-IS"
+    ],
+    "answer": "CD",
+    "images": []
+  },
+  {
+    "number": 90,
+    "body": [
+      "Which process in the Junos OS is responsible for maintaining routing protocols and tables?"
+    ],
+    "options": [
+      "A. rpd",
+      "B. dcd",
+      "C. mgd",
+      "D. chassisd"
+    ],
+    "answer": "A",
+    "images": []
+  },
+  {
+    "number": 91,
+    "body": [
+      "Which layer of the OSI model contains the IP address information?"
+    ],
+    "options": [
+      "A. Layer 4",
+      "B. Layer 2",
+      "C. Layer 3",
+      "D. Layer 1"
+    ],
+    "answer": "C",
+    "images": []
+  },
+  {
+    "number": 92,
+    "body": [
+      "Referring to the exhibit, what is the source IP address of the ping that was executed?"
+    ],
+    "options": [
+      "A. 10.12.0.2",
+      "B. 10.23.0.2",
+      "C. 10.23.0.3",
+      "D. 10.24.0.4"
+    ],
+    "answer": "B",
+    "images": [
+      "images/q92_9.png"
+    ]
+  },
+  {
+    "number": 93,
+    "body": [
+      "How is traffic, sourced from 10.0.0.0/8, treated by the firewall filter shown in the exhibit?"
+    ],
+    "options": [
+      "A. logged with no further action",
+      "B. logged and rejected",
+      "C. logged and discarded",
+      "D. logged and accepted"
+    ],
+    "answer": "B",
+    "images": [
+      "images/q93_10.png"
+    ]
+  },
+  {
+    "number": 94,
+    "body": [
+      "What does the user@router> clear log ospf-trace command accomplish?"
+    ],
+    "options": [
+      "A. Logging data into ospf-trace is stopped.",
+      "B. Trace parameters are removed from the OSPF protocol configuration.",
+      "C. Data in the ospf-trace file is removed and logging continues.",
+      "D. The ospf-trace file is deleted."
+    ],
+    "answer": "C",
+    "images": []
+  },
+  {
+    "number": 95,
+    "body": [
+      "Which character is used to filter the command output in the Junos CLI?"
+    ],
+    "options": [
+      "A. I",
+      "B. >",
+      "C. <",
+      "D.?"
+    ],
+    "answer": "A",
+    "images": []
+  },
+  {
+    "number": 96,
+    "body": [],
+    "options": [
+      "A network administrator is attempting to route traffic on a Juniper switch to one of three different VLANs: Prod, Test, and Dev. Each VLAN has been assigned a numerical value. In this scenario, what are these numerical values called?",
+      "B. A. defaults",
+      "C. B. interfaces",
+      "D. C. names",
+      "E. D. tags"
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 97,
+    "body": [
+      "What are two functions of the routing protocol daemon (rpd)? (Choose two.)"
+    ],
+    "options": [
+      "A. It maintains routing tables.",
+      "B. It generates chassis alarms.",
+      "C. It creates forwarding tables.",
+      "D. It provides access to the CLI."
+    ],
+    "answer": "AC",
+    "images": []
+  },
+  {
+    "number": 98,
+    "body": [
+      "Which two statements are correct regarding Layer 2 network switches? (Choose two.)"
+    ],
+    "options": [
+      "A. Switches flood broadcast traffic.",
+      "B. Switches are susceptible to traffic loops.",
+      "C. Switches do not learn MAC addresses.",
+      "D. Switches create a single collision domain."
+    ],
+    "answer": "AB",
+    "images": []
+  },
+  {
+    "number": 99,
+    "body": [
+      "Which two statements apply to the Routing Engine functions? (Choose two.)"
+    ],
+    "options": [
+      "A. It does not process routing updates.",
+      "B. It responds to ping and traceroute commands.",
+      "C. It maintains the routing tables.",
+      "D. It processes the transit traffic."
+    ],
+    "answer": "BC",
+    "images": []
+  },
+  {
+    "number": 100,
+    "body": [
+      "You have configured some interfaces on a Junos device; however, you have not yet committed the configuration.",
+      "What happens if you issue the rollback 0 command in this scenario?"
+    ],
+    "options": [
+      "A. The messages.log file is deleted.",
+      "B. The factory default configuration is loaded.",
+      "C. The Junos device is rebooted.",
+      "D. The interface changes you made are discarded."
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 101,
+    "body": [
+      "You want to redeploy a Junos device by clearing the existing configuration and resetting it to factory defaults.",
+      "In this scenario, which command would help to accomplish this task?"
+    ],
+    "options": [
+      "A. show system storage",
+      "B. request system storage cleanup",
+      "C. request system storage cleanup dry-run",
+      "D. request system zeroize media"
+    ],
+    "answer": "D",
+    "images": []
+  },
+  {
+    "number": 102,
+    "body": [
+      "Referring to the exhibit, what should be configured on R1 to advertise a default static route into OSPF?"
+    ],
+    "options": [
+      "A. a firewall filter",
+      "B. a routing policy",
+      "C. a loopback interface",
+      "D. a management interface"
+    ],
+    "answer": "B",
+    "images": [
+      "images/q102_11.png"
+    ]
+  },
+  {
+    "number": 103,
+    "body": [
+      "Exhibit",
+      "term limit-icmp",
+      "{",
+      "from {",
+      "source-address {",
+      "172.25.11.0/24;",
+      "}",
+      "protocol icmp;",
+      "}",
+      "then {",
+      "}",
+      "count count-icmp;",
+      "discard;",
+      "}",
+      "Referring to the exhibit, which two actions will occur when a packet matches the firewall filter? (Choose two.)"
+    ],
+    "options": [
+      "A. An ICMP destination unreachable message will be returned.",
+      "B. The packet will be forwarded.",
+      "C. The packet will be discarded.",
+      "D. A counter will be incremented."
+    ],
+    "answer": "CD",
+    "images": []
+  },
+  {
+    "number": 104,
+    "body": [
+      "Which two actions happen when multiple users issue the configure exclusive command to enter configuration mode on a Junos device? (Choose two.)"
+    ],
+    "options": [
+      "A. Other users can enter configuration mode.",
+      "B. The candidate configuration is unlocked.",
+      "C. The candidate configuration is locked.",
+      "D. Other users cannot enter configuration mode."
+    ],
+    "answer": "CD",
+    "images": []
+  },
+  {
+    "number": 105,
+    "body": [
+      "Which two statements are true about the Junos OS (Choose two)"
+    ],
+    "options": [
+      "A. Routing table are stored in the control plane.",
+      "B. Exception traffic is never sent to the control plane.",
+      "C. Exception traffic is sent to the control plane.",
+      "D. Routing table are stored in the forwarding plane."
+    ],
+    "answer": "AC",
+    "images": []
+  },
+  {
+    "number": 106,
+    "body": [
+      "You are manually adding a route to a Junos device.",
+      "In this scenario, which type of route would this be called?"
+    ],
+    "options": [
+      "A directly connected route",
+      "B. A static route",
+      "C. A dynamic route",
+      "D. A local route"
+    ],
+    "answer": "B",
+    "images": []
+  }
+]
